@@ -8,7 +8,7 @@ The RMSE = [0.0961, 0.0922, 0.4525, 0.4435]
 [Here](./video/out.ogv) is the vido of my monitor.
 
 ## **3.The follows of my algorithm**
-### *3.1 I use the first measurements to initialize the "x_".*  
+### *3.1 I use the first measurements to initialize the `x_`.*  
 
 If the first measurement comes from RADAR my code shows in below.    
 ```c++
@@ -26,7 +26,7 @@ If the first measurement comes from LASER my code shows in below.
 
   previous_timestamp_ = measurement_pack.timestamp_;
 ```
-### *3.2 After the first measurement I make a predicion use the 'Predict' method of the `kalman_filter` class.* 
+### *3.2 After the first measurement I make a predicion use the `Predict` method of the `kalman_filter` class.* 
 
  Here is the steps:
  - calculate the elapsed time between the current and previous measurement.
